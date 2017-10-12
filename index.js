@@ -1,14 +1,14 @@
 import Koa from 'koa';
 import sequelize from './config/sequelize';
 import checkModel from './middleware/checkModel';
+import checkController from "./middleware/checkController";
+import router from './router'
 
 const koa = new Koa();
 
 koa.use(checkModel);
+koa.use(checkController);
 
-koa.use(async (ctx) => {
-  ctx.body = "Hello world";
-});
 sequelize
   .authenticate()
   .then(() => {
@@ -18,6 +18,5 @@ sequelize
     console.error('数据库链接失败');
   });
 
-
-
+koa.use(router.routes());
 koa.listen(3000);

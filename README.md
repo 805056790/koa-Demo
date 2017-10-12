@@ -108,3 +108,17 @@ router.url('user', 3);
 > [商城实战]("git@github.com:skyvow/m-mall-admin.git")这个开源的项目
 
 > 现在开始动手
+
+### controller也通过读取文件加载的方式来加载了
+
+> 使用方法
+
+> 在controller文件中定义方法，然后导出的样例
+
+```
+   export default {
+   'GET ／': function
+   }
+```
+
+> 这样就可以进行路由的对应了
