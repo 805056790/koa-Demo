@@ -1,5 +1,9 @@
-import fs from 'fs';
+import Koa from 'koa';
 
-let data = fs.readdirSync(__dirname, 'utf-8');
+const koa = new Koa();
 
-console.log(data)
+koa.use(async (ctx) => {
+  ctx.body = "Hello world";
+});
+
+koa.listen(3000);
