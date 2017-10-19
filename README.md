@@ -115,10 +115,12 @@ router.url('user', 3);
 
 > 在controller文件中定义方法，然后导出的样例
 
-```
+``` javascript
    export default {
    'GET ／': function
    }
 ```
 
 > 这样就可以进行路由的对应了
+
+#### 现在的话model已经全部定义完成了

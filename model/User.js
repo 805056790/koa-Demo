@@ -21,9 +21,6 @@ const user = sequelize.define("user", {
     defaultValue: 0
   },
   lockUntil: Sequelize.INTEGER,
-  // Timestamps
-  createdAt: Sequelize.DATE,
-  updatedAt: Sequelize.DATE,
 });
 
 export default user;

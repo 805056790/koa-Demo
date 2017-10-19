@@ -6,27 +6,25 @@ export default async function checkController(ctx, next) {
     console.log(data);
     for (let url of data) {
       let controller = require(process.cwd() + '/controller/' + url);
-      for (let route in controller.default) {
-        let verb = route.split(" ")[0];
-        let url = route.split(" ")[1];
-        console.log(route)
-        console.log(url);
-        console.log(typeof controller.default[route])
+      for (let routeInfo in controller.default) {
+        let verb;
+        verb = routeInfo.split(" ")[0];
+        let url = routeInfo.split(" ")[1];
         switch (verb.toLowerCase()) {
           case 'get':
-            router.get(url, controller.default[route]);
+            router.get(url, controller.default[routeInfo]);
             break;
           case 'post':
-            router.post(url, controller.default[route]);
+            router.post(url, controller.default[routeInfo]);
             break;
           case 'put':
-            router.put(url, controller.default[route]);
+            router.put(url, controller.default[routeInfo]);
             break;
           case 'del':
-            router.del(url, controller.default[route]);
+            router.del(url, controller.default[routeInfo]);
             break;
           default:
-            router.all(url, controller.default[route]);
+            router.all(url, controller.default[routeInfo]);
             break;
         }
       }
