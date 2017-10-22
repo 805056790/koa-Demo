@@ -1,5 +1,6 @@
 import sequelize from '../config/sequelize';
 import Sequelize from 'Sequelize';
+import User from "./User";
 
 const Order = sequelize.define('order', {
   id: {

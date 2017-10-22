@@ -8,7 +8,7 @@ export default async function checkModel(ctx, next) {
     for (let modelName of data) {
       let model = require(process.cwd() + '/model/' + modelName);
     }
-    sequelize.sync({ force: true });
+    sequelize.sync();
     console.log('init db ok.');
   });
 

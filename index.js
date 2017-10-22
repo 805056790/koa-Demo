@@ -3,20 +3,31 @@ import sequelize from './config/sequelize';
 import checkModel from './middleware/checkModel';
 import checkController from "./middleware/checkController";
 import router from './router'
+import checkDatabase from "./middleware/checkDatabase";
+import path from 'path';
+import bodyParser from 'koa-bodyparser';
+import koaStatic from 'koa-static';
+import views from 'koa-views';
 
 const koa = new Koa();
 
-koa.use(checkModel);
-koa.use(checkController);
+checkDatabase();
+checkModel();
+checkController();
 
-sequelize
-  .authenticate()
-  .then(() => {
-    console.log('数据库链接成功');
-  })
-  .catch(err => {
-    console.error('数据库链接失败');
-  });
+//解析post参数
+koa.use(bodyParser());
+
+//设置静态资源
+const staticPath = './public';
+koa.use(koaStatic(
+  path.join(__dirname, staticPath)
+));
+
+// 加载模板引擎
+koa.use(views(path.join(__dirname, './view'), {
+  extension: 'ejs'
+}));
 
 koa.use(router.routes());
 koa.listen(3000);

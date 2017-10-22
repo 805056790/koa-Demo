@@ -2,11 +2,12 @@ import router from '../router/index';
 
 //测试一下默认路由
 async function test(ctx) {
-  console.log("----testaddress----")
-  ctx.body = "hello worldAddress";
+  let postdata = "";
+  let postData = ctx.request.body;
+  ctx.body = postData
 }
 
 
 export default {
-  'GET /test': test
+  'POST /test': test
 }

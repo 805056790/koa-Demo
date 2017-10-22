@@ -3,9 +3,9 @@ import Sequelize from 'Sequelize';
 
 const Help = sequelize.define("help", {
   id: {
+    type: Sequelize.INTEGER,
     primaryKey: true,
-    type: Sequelize.STRING,
-    autoIncrement: true
+    autoIncrement: true,
   },
   title: Sequelize.STRING,
   content: Sequelize.STRING

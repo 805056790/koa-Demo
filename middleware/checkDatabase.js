@@ -1,21 +1,12 @@
-/**
- * Created by yzdd on 2017/10/21.
- */
-import React, {Component} from 'react';
-import {
-  View,
-  Text,
-  StyleSheet
-} from 'react-native';
+import sequelize from '../config/sequelize';
 
-export default class checkDatabase extends Component {
-  render() {
-    return (
-      < View >
-
-      < / View >
-  )
-    ;
+export default async function checkDatabase(ctx, next) {
+  try {
+    console.log("---------")
+    await sequelize.authenticate();
+    console.log("数据库连接成功");
+  } catch (err) {
+    console.log("连接失败");
   }
+  next();
 }
-const styles = StyleSheet.create({});
