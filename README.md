@@ -126,3 +126,52 @@ router.url('user', 3);
 #### 现在的话model已经全部定义完成了
 #### 接下来需要接入准备的各种第三方中间件
 #### 加入静态资源的加载和模版引擎，实现网页的加载
+
+#### 加入了react作为前端的渲染视图模版
+
+> 通过webpack的配置，监听文件修改即实时打包，然后开启koa的服务器加载webpack打包出来的bundle文件
+
+> 这样不知道有没有性能问题，但是现在的情况是可行的
+
+> 查看简单的webpack配置文件
+
+> 代码如下:
+
+``` javascript 1.5
+/**
+ * Created by panca on 16/8/14.
+ */
+var path = require('path');
+var webpack = require('webpack');
+module.exports = {
+  entry: [path.resolve(__dirname, './src/index.js')],
+  output: {
+    path: path.resolve(__dirname, './build'),
+    filename: 'bundle.js'
+  },
+  module: {
+    loaders: [
+      {
+        test: /\.js?$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: 'babel',
+        query: {
+          presets: ['es2015', 'react']
+        }
+      },
+      {test: /\.css$/, loader: 'style-loader!css-loader'},
+      {test: /\.svg/, loader: 'svg-url-loader'}
+    ]
+  },
+  plugins: [
+  ]
+};
+```
+
+> 可以看出我通过百度已经查看了并且加入了svg的loader
+
+> 但是我在加载这个bundle的时候，发现svg文件导入错误
+
+> 接下来我试一下图片文件
+
+> 现在的项目框架应该已经搭建完成

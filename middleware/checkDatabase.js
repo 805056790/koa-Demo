@@ -2,7 +2,7 @@ import sequelize from '../config/sequelize';
 
 export default async function checkDatabase(ctx, next) {
   try {
-    console.log("---------")
+    console.log("--------333-")
     await sequelize.authenticate();
     console.log("数据库连接成功");
   } catch (err) {
