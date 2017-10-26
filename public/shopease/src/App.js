@@ -1,18 +1,15 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
+import {Provider} from 'react-redux';
 import './App.css';
+import store from './store/store';
+import Counter from './page/Counter'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Werrwerwleee你好co to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <Provider store={store}>
+        <Counter/>
+      </Provider>
     );
   }
 }
