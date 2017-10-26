@@ -27,3 +27,26 @@ export function addAsync() {
     type: 'INCREMENT_ASYNC'
   }
 }
+
+//请求
+export function request() {
+  return {
+    type: 'FETCH_REQUEST'
+  }
+}
+
+//请求成功
+export function requestSuccess(result) {
+  return {
+    type: 'FETCH_REQUEST',
+    result: result
+  }
+}
+
+//请求失败
+export function requestError(error) {
+  return {
+    type: 'FETCH_REQUEST',
+    error: error
+  }
+}
