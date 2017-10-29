@@ -1,20 +1,12 @@
-/**
- * Created by yzdd on 2017/10/29.
- */
-import React, {Component} from 'react';
-import {
-  View,
-  Text,
-  StyleSheet
-} from 'react-native';
+import sequelize from '../config/sequelize';
+import Sequelize from 'Sequelize';
 
-export default class ChatUser extends Component {
-  render() {
-    return (
-      <View>
-
-      </View>
-    );
-  }
-}
-const styles = StyleSheet.create({});
+const ChatUser = sequelize.define("ChatUser", {
+  id: {
+    type: Sequelize.INTEGER,
+    primaryKey: true,
+    autoIncrement: true
+  },
+  username: Sequelize.STRING,
+  password: Sequelize.STRING
+});

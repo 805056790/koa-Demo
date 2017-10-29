@@ -1,15 +1,34 @@
 import {combineReducers} from 'redux';
+import {handleActions} from "redux-actions";
 
-export default function counter(state = 0, action) {
-  switch (action.type) {
-    case 'INCREMENT':
-      return state + 1;
-    case 'INCREMENT_IF_ODD':
-      return (state % 2 !== 0) ? state + 1 : state;
-    case 'DECREMENT':
-      return state - 1;
-    default:
-      return state
-  }
-}
+const initialState = {
+  isLogin: false,
+  loading: false,
+  data: [],
+  status: null
+};
 
+const login = handleActions({
+  ["LOGINSTART"]: (state, action) => ({
+    ...state,
+    status: 'pending',
+    loading: true,
+    isLogin: false
+  }),
+  ["LOGINSUCCESS"]: (state, action) => ({
+    ...state,
+    status: 'success',
+    loading: false,
+    data: action.data,
+    isLogin: true
+  }),
+  ["LOGINERROR"]: (state, action) => ({
+    ...state,
+    status: "error",
+    loading: false,
+    isLogin: false
+  })
+},initialState);
+export default combineReducers({
+  login
+})

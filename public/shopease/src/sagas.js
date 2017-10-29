@@ -1,6 +1,7 @@
 import {takeEvery} from 'redux-saga'
-import {put, all, take} from 'redux-saga/effects'
-import {request} from "./logics/rpc";
+import {put, all, take, call} from 'redux-saga/effects'
+import {post, request} from "./logics/rpc";
+import {eventChannel, END} from 'redux-saga'
 
 export function* helloSaga() {
   console.log('Hello Sagas!----');
@@ -22,19 +23,58 @@ export function* watchIncrementAsync() {
   yield* takeEvery('INCREMENT_ASYNC', incrementAsync)
 }
 
-export function* watchDecAsync() {
-  console.log("执行异步");
+function* loginSaga() {
+  console.log("---login的saga")
   while (true) {
-    yield take('FETCH_REQUEST', fetchResult);
+    let action = yield take("LOGINSTART");
+    console.log(action.payload, "-----payload----");
+    try {
+      let result = yield call(post, "/login", {
+        username: action.payload.username,
+        password: action.payload.password
+      });
+      console.log(result);
+      yield put({type: "LOGINSUCCESS", data: result.data});
+    }
+    catch (err) {
+      yield put({type: "LOGINERROR", error: err.message})
+    }
   }
 }
 
-export function* fetchResult() {
+
+// creates an event Channel from an interval of seconds
+function countdown(secs) {
+  return eventChannel(emitter => {
+      const iv = setInterval(() => {
+        secs -= 1;
+        if (secs > 0) {
+          emitter(secs)
+        } else {
+          // this causes the channel to close
+          emitter(END)
+        }
+      }, 1000);
+      // The subscriber must return an unsubscribe function
+      return () => {
+        clearInterval(iv)
+      }
+    }
+  )
+}
+
+export function* saga() {
+  const chan = yield call(countdown, 3);
+  console.log(chan, "ACTION__________");
   try {
-    const result = yield call(request, "https://easy-mock.com/mock/59e6ec7334be4b482ca21779/example_1508306035579/user");
-    yield put("FETCH_SUCCESS", result);
-  } catch (err) {
-    yield put("FETCH_ERROR", err.message);
+    while (true) {
+      // take(END) will cause the saga to terminate by jumping to the finally block
+      let seconds = yield take(chan);
+
+      console.log(`countdown: ${seconds}`)
+    }
+  } finally {
+    console.log('countdown terminated')
   }
 }
 
@@ -42,6 +82,7 @@ export default function* rootSaga() {
   yield all([
     helloSaga(),
     watchIncrementAsync(),
-    watchDecAsync()
+    loginSaga(),
+    saga()
   ])
 }

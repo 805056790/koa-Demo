@@ -7,10 +7,12 @@ import store from "./store/store";
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
+global.__DEV__ = true;
+
 ReactDOM.render(
   <Provider store={store}>
     <MuiThemeProvider muiTheme={getMuiTheme()}>
-    <App />
-  </MuiThemeProvider>
+      <App/>
+    </MuiThemeProvider>
   </Provider>, document.getElementById('root'));
 

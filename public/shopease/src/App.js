@@ -2,25 +2,32 @@ import React, {Component} from 'react';
 import {Provider} from 'react-redux';
 import './App.css';
 import store from './store/store';
-import Counter from './page/Counter'
 import {
-  BrowserRouter as Router,
+  Router,
   Route,
   Link,
-  Switch
-} from 'react-router-dom'
-import User from "./page/User";
-import Login from "./page/auth/Login";
+  Switch, HashRouter,
 
+} from 'react-router-dom'
+import Login from "./page/auth/Login";
+import Reg from "./page/auth/Reg";
+import Header from "./components/Header";
+import history from './history/history'
 
 class App extends Component {
   render() {
     return (
-      <Router>
-        <div>
-          <Route path='/' exact component={Login}/>
-        </div>
-      </Router>
+      <div>
+        <Header/>
+        <Router history={history}>
+          <div>
+            <Switch>
+              <Route path='/' exact component={Login}/>
+              <Route path='/reg' exact component={Reg}/>
+            </Switch>
+          </div>
+        </Router>
+      </div>
     );
   }
 }

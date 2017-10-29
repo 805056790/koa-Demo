@@ -206,3 +206,54 @@ module.exports = {
 ```
 
 > 对于redux可能要需要多实践 ------------>反思
+
+#### 最近学习了socket.io和redux-saga
+
+> 看了一些大神的例子，准备暂停之前的商城系统，另开一个聊天系统的开发
+
+> 基础工具用redux-saga和socket.io 。想想还是有点兴奋的
+
+> 今天的收获是redux-saga如何在middleware之外的使用方法:
+
+``` javascript
+    // 通过使用redux-saga的eventChannel来实现
+    
+    import { eventChannel, END } from 'redux-saga'
+    
+    function countdown(secs) {
+      return eventChannel(emitter => {
+          const iv = setInterval(() => {
+            secs -= 1
+            if (secs > 0) {
+              emitter(secs)
+            } else {
+              // this causes the channel to close
+              emitter(END)
+            }
+          }, 1000);
+          // The subscriber must return an unsubscribe function
+          return () => {
+            clearInterval(iv)
+          }
+        }
+      )
+    }
+    
+    export function* saga() {
+      const chan = yield call(countdown, value)
+      try {    
+        while (true) {
+          // take(END) will cause the saga to terminate by jumping to the finally block
+          let seconds = yield take(chan)
+          console.log(`countdown: ${seconds}`)
+        }
+      } finally {
+        console.log('countdown terminated')
+      }
+    }
+    // 通过这个可以看出通过emit的东西，将捕获的对象通过action 的形式传递出来
+    // 之后被take捕获，实现了外部使用redux-saga
+    // 这个的话跟socket类似
+    //就很容易配合socket.io来实现项目的开发
+    
+```

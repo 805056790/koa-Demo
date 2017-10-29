@@ -5,8 +5,13 @@ import React, {Component} from 'react';
 import TextField from 'material-ui/TextField';
 import './Login.css';
 import RaisedButton from 'material-ui/RaisedButton';
+import {post} from '../../logics/rpc';
+import {connect} from "react-redux";
+import {LOGINSTART} from "../../action/Action";
+import Dialog from 'material-ui/Dialog';
+import FlatButton from 'material-ui/FlatButton';
 
-export default class Login extends Component {
+class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -15,26 +20,53 @@ export default class Login extends Component {
     }
   }
 
-  setLogin = ()=> {
-    console.log("-------")
+  async componentWillMount() {
+
   }
 
+  setLogin = async (e) => {
+    this.props.dispatch(LOGINSTART({username: this.state.username, password: this.state.password}));
+  };
+
+  toReg = () => {
+    console.log(this.props.history);
+    this.props.history.push("/reg")
+  };
+
   render() {
+    const {userData} = this.props;
     return (
       <div className="container">
-        <TextField
-          hintText="请输入账号"
-          floatingLabelText="账号"
-          onChange={(text) => this.setState({username: text})}
-        />
-        <TextField
-          hintText="请输入密码"
-          floatingLabelText="密码"
-          type="password"
-          onChange={(text) => this.setState({password: text})}
-        />
-        <RaisedButton label="Default" style={{marginTop: 12}} onClick={this.setLogin}/>
+        <div className="inputView">
+          <TextField
+            hintText="请输入账号"
+            floatingLabelText="账号"
+            onChange={(e) => this.setState({username: e.target.value})}
+          />
+          <TextField
+            hintText="请输入密码"
+            floatingLabelText="密码"
+            type="password"
+            onChange={(e) => this.setState({password: e.target.value})}
+          />
+        </div>
+        <div className="btnView">
+          <RaisedButton label="登录" style={{marginTop: 12}} onClick={this.setLogin}/>
+        </div>
+        {
+          !userData.isLogin ?
+            <p>你还没有登录</p> :
+            <p>账号密码{userData.data.username}:{userData.data.password}</p>
+        }
       </div>
     );
   }
 }
+
+function selectUserData(state) {
+  return {
+    userData: state.login
+  }
+}
+
+export default connect(selectUserData)(Login);

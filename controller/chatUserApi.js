@@ -1,20 +1,14 @@
-/**
- * Created by yzdd on 2017/10/29.
- */
-import React, {Component} from 'react';
-import {
-  View,
-  Text,
-  StyleSheet
-} from 'react-native';
+import router from '../router/index';
 
-export default class charUserApi extends Component {
-  render() {
-    return (
-      <View>
+async function login() {
 
-      </View>
-    );
-  }
 }
-const styles = StyleSheet.create({});
+
+async function reg() {
+
+}
+
+export default {
+  "POST /login": login,
+  "POST /reg": reg
+}
