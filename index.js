@@ -17,8 +17,14 @@ io.on('connection', function (socket) {
   console.log('a user connect');
   socket.on("disconnect", function () {
     console.log("a user disconnect");
-  })
+  });
+  socket.on("login", function (username) {
+    console.log(username + "登录了");
+
+  });
+  socket.broadcast.emit('users.login', 444444);
 });
+
 
 checkDatabase();
 checkModel();

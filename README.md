@@ -255,5 +255,54 @@ module.exports = {
     // 之后被take捕获，实现了外部使用redux-saga
     // 这个的话跟socket类似
     //就很容易配合socket.io来实现项目的开发
-    
 ```
+
+#### 11月4日 对于redux管理全局的modal的问题
+
+> 对于上面那个问题
+
+> 看到一个非常好的办法是将modal组件推到state里面去
+
+> 然后根据map加载的modal组件
+
+> 后加载的如果不涉及z-index这个css属性
+
+> 默认是后面的组件在上面
+
+> 这样就又解决了modal框的层级问题
+
+> 现在就按照这个思路来设计一下modal框
+
+> 具体的实现已经在代码里面了
+
+> 今天学习的内容包括了React的一些基本api
+
+##### React.createElement
+
+```
+  ReactElement createElement(
+    string/ReactClass type,
+    [object props],
+    [children ...]
+  )
+  //type参数 为html标签名称
+  
+  //type参数可以是一个html标签名称，也可以是一个ReactClass。首先我们看使用html标签的例子。
+  //但是对于创建ul元素的createElement方法来说，同样第一个参数是html标签名称ul，
+  //第二个参数是一个props对象{ className: 'my-list'}。
+  //当然这里我们也可以添加其他的属性例如{ className: 'my-list', name:’ulname’}。
+  //这些属性可以通过this.props.name来调用。但是奇怪的是第二个参数以后有多个参数，这怎么解释。
+  //是不是createElement不止三个参数，从第二个参数往后，该节点有多少个子节点那就有多少个参数。
+  //可以这么认为，但是我们对上面的例子稍加改造就可以看出其实说createElement有三个参数也没有问题。
+```
+```
+   React.cloneElement(
+     element,
+     [props],
+     [...children]
+   )
+   //克隆的api的话就是以节点为第一参数
+```
+
+#### 查看了一下关于socket.io的api
+#### 先上传明日再看11。5

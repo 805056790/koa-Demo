@@ -2,30 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56f1ae9d-a86a-4c09-8ad6-89fff78a2950" name="Default" comment="脚手架差不多完成了">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/chatUserApi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/ChatUser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/shopease/src/components/Header.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/shopease/src/history/history.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/shopease/scripts/build.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/shopease/scripts/start.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/shopease/scripts/test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/shopease/src/page/Counter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/shopease/src/page/User.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/shopease/src/components/Loading.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/shopease/src/components/Modal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/shopease/src/components/modal.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/shopease/src/components/modal/MessModal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/shopease/src/logics/auth.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/shopease/src/page/chat/Chat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/shopease/src/page/chat/component/ChatLine.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/shopease/src/reducer/auth.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/shopease/src/reducer/chat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/shopease/src/reducer/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/shopease/src/reducer/modalShow.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/shopease/src/sagas/auth.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/shopease/src/sagas/chat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/shopease/src/sagas/common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/shopease/src/socket.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/util/apiUtil.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/shopease/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/shopease/src/reducer/reducer.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/shopease/src/action/ActionType.js" afterPath="$PROJECT_DIR$/public/shopease/src/components/loading.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/userApi.js" afterPath="$PROJECT_DIR$/controller/userApi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/chatUserApi.js" afterPath="$PROJECT_DIR$/controller/chatUserApi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/ChatUser.js" afterPath="$PROJECT_DIR$/model/ChatUser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/Classify.js" afterPath="$PROJECT_DIR$/model/Classify.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/shopease/src/App.js" afterPath="$PROJECT_DIR$/public/shopease/src/App.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/shopease/src/action/Action.js" afterPath="$PROJECT_DIR$/public/shopease/src/action/Action.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/shopease/src/action/ActionType.js" afterPath="$PROJECT_DIR$/public/shopease/src/action/ActionType.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/shopease/src/index.js" afterPath="$PROJECT_DIR$/public/shopease/src/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/shopease/src/logics/rpc.js" afterPath="$PROJECT_DIR$/public/shopease/src/logics/rpc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/shopease/src/page/auth/Login.css" afterPath="$PROJECT_DIR$/public/shopease/src/page/auth/Login.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/shopease/src/page/auth/Login.js" afterPath="$PROJECT_DIR$/public/shopease/src/page/auth/Login.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/shopease/src/page/auth/Reg.js" afterPath="$PROJECT_DIR$/public/shopease/src/page/auth/Reg.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/shopease/src/reducer/reducer.js" afterPath="$PROJECT_DIR$/public/shopease/src/reducer/reducer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/shopease/src/sagas.js" afterPath="$PROJECT_DIR$/public/shopease/src/sagas.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/shopease/src/store/store.js" afterPath="$PROJECT_DIR$/public/shopease/src/store/store.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -39,36 +46,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Login.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/shopease/src/page/auth/Login.js">
+      <file leaf-file-name="Chat.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/shopease/src/page/chat/Chat.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="38" column="24" lean-forward="false" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
+            <state relative-caret-position="213">
+              <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
               <folding>
-                <element signature="e#42#81#0" expanded="true" />
+                <element signature="e#41#80#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChatUser.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/ChatUser.js">
+      <file leaf-file-name="sagas.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/shopease/src/sagas.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="chatUserApi.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/chatUserApi.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+            <state relative-caret-position="85">
+              <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="271">
+              <caret line="24" column="45" lean-forward="false" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+              <folding>
+                <element signature="e#0#22#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -77,12 +84,10 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="517">
-                <caret line="257" column="4" lean-forward="false" selection-start-line="257" selection-start-column="4" selection-end-line="257" selection-end-column="4" />
+              <first_editor relative-caret-position="514">
+                <caret line="307" column="16" lean-forward="false" selection-start-line="307" selection-start-column="16" selection-end-line="307" selection-end-column="16" />
                 <folding>
-                  <marker date="1509280352000" expanded="true" signature="1632:1771" ph="{...}" />
-                  <marker date="1509280352000" expanded="true" signature="3500:3698" ph="{...}" />
-                  <marker date="1509280352000" expanded="true" signature="3626:3692" ph="{...}" />
+                  <marker date="1509898642000" expanded="true" signature="1632:1771" ph="{...}" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -90,45 +95,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userApi.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/userApi.js">
+      <file leaf-file-name="socket.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/shopease/src/socket.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-58">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Classify.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/Classify.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Cart.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/Cart.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="34">
+              <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/User.js">
+      <file leaf-file-name="auth.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/shopease/src/sagas/auth.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="178">
+              <caret line="44" column="73" lean-forward="false" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="73" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="auth.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/shopease/src/reducer/auth.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="867">
+              <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -136,25 +129,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/shopease/src/App.js">
+      <file leaf-file-name="Action.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/shopease/src/action/Action.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+            <state relative-caret-position="360">
+              <caret line="26" column="22" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chat.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/shopease/src/sagas/chat.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#0#43#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Header.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/shopease/src/components/Header.js">
+      <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/shopease/src/sagas/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="29" column="17" lean-forward="true" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+            <state relative-caret-position="319">
+              <caret line="30" column="25" lean-forward="false" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
               <folding>
-                <element signature="e#42#81#0" expanded="true" />
+                <element signature="e#0#43#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -178,6 +181,7 @@
       <find>index.html</find>
       <find>appHrml</find>
       <find>hash</find>
+      <find>../../components/Modal</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -186,31 +190,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/router/index.js" />
-        <option value="$PROJECT_DIR$/model/User.js" />
-        <option value="$PROJECT_DIR$/model/Address.js" />
-        <option value="$PROJECT_DIR$/model/Banner.js" />
-        <option value="$PROJECT_DIR$/model/Good.js" />
-        <option value="$PROJECT_DIR$/model/Cart.js" />
-        <option value="$PROJECT_DIR$/model/Classify.js" />
-        <option value="$PROJECT_DIR$/model/Order.js" />
-        <option value="$PROJECT_DIR$/model/Help.js" />
-        <option value="$PROJECT_DIR$/middleware/checkModel.js" />
-        <option value="$PROJECT_DIR$/node_modules/koa-bodyparser/index.js" />
-        <option value="$PROJECT_DIR$/middleware/checkController.js" />
-        <option value="$PROJECT_DIR$/public/shopease/public/manifest.json" />
-        <option value="$PROJECT_DIR$/public/shopease/config/paths.js" />
-        <option value="$PROJECT_DIR$/public/shopease/config/webpack.config.dev.js" />
         <option value="$PROJECT_DIR$/public/shopease/config/webpack.config.prod.js" />
         <option value="$PROJECT_DIR$/public/shopease/build/bundle.js" />
         <option value="$PROJECT_DIR$/public/shopease/public/index.html" />
         <option value="$PROJECT_DIR$/view/index.ejs" />
         <option value="$PROJECT_DIR$/public/shopease/package.json" />
         <option value="$PROJECT_DIR$/middleware/checkDatabase.js" />
-        <option value="$PROJECT_DIR$/public/shopease/src/store/store.js" />
         <option value="$PROJECT_DIR$/public/shopease/src/sagas.spec.js" />
         <option value="$PROJECT_DIR$/controller/addressApi.js" />
-        <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/public/shopease/src/page/Counter.js" />
         <option value="$PROJECT_DIR$/public/shopease/src/page/User.js" />
         <option value="$PROJECT_DIR$/package.json" />
@@ -219,19 +206,40 @@
         <option value="$PROJECT_DIR$/public/shopease/src/page/auth/Login.css" />
         <option value="$PROJECT_DIR$/public/shopease/src/logics/rpc.js" />
         <option value="$PROJECT_DIR$/public/shopease/src/action/ActionType.js" />
-        <option value="$PROJECT_DIR$/public/shopease/src/reducer/reducer.js" />
         <option value="$PROJECT_DIR$/public/shopease/src/index.js" />
         <option value="$PROJECT_DIR$/controller/userApi.js" />
-        <option value="$PROJECT_DIR$/public/shopease/src/action/Action.js" />
-        <option value="$PROJECT_DIR$/public/shopease/src/sagas.js" />
-        <option value="$PROJECT_DIR$/public/shopease/src/page/auth/Reg.js" />
         <option value="$PROJECT_DIR$/public/shopease/src/history/history.js" />
-        <option value="$PROJECT_DIR$/public/shopease/src/components/Header.js" />
-        <option value="$PROJECT_DIR$/public/shopease/src/App.js" />
-        <option value="$PROJECT_DIR$/public/shopease/src/page/auth/Login.js" />
-        <option value="$PROJECT_DIR$/model/ChatUser.js" />
         <option value="$PROJECT_DIR$/controller/charUserApi.js" />
+        <option value="$PROJECT_DIR$/model/Classify.js" />
+        <option value="$PROJECT_DIR$/model/ChatUser.js" />
+        <option value="$PROJECT_DIR$/public/shopease/src/logics/auth.js" />
+        <option value="$PROJECT_DIR$/util/apiUtil.js" />
+        <option value="$PROJECT_DIR$/public/shopease/src/components/loading.css" />
+        <option value="$PROJECT_DIR$/public/shopease/src/components/Loading.js" />
+        <option value="$PROJECT_DIR$/public/shopease/src/store/store.js" />
+        <option value="$PROJECT_DIR$/public/shopease/src/reducer/reducer.js" />
+        <option value="$PROJECT_DIR$/public/shopease/src/reducer/auth.js" />
+        <option value="$PROJECT_DIR$/public/shopease/src/page/auth/Reg.js" />
+        <option value="$PROJECT_DIR$/public/shopease/src/components/modal.css" />
+        <option value="$PROJECT_DIR$/public/shopease/src/components/modal/MessModal.js" />
+        <option value="$PROJECT_DIR$/public/shopease/src/components/Modal.js" />
+        <option value="$PROJECT_DIR$/public/shopease/src/reducer/modalShow.js" />
+        <option value="$PROJECT_DIR$/middleware/checkModel.js" />
         <option value="$PROJECT_DIR$/controller/chatUserApi.js" />
+        <option value="$PROJECT_DIR$/public/shopease/src/page/auth/Login.js" />
+        <option value="$PROJECT_DIR$/public/shopease/src/components/Header.js" />
+        <option value="$PROJECT_DIR$/public/shopease/src/page/chat/component/ChatLine.js" />
+        <option value="$PROJECT_DIR$/public/shopease/src/App.js" />
+        <option value="$PROJECT_DIR$/public/shopease/src/reducer/index.js" />
+        <option value="$PROJECT_DIR$/public/shopease/src/sagas/chat.js" />
+        <option value="$PROJECT_DIR$/public/shopease/src/action/Action.js" />
+        <option value="$PROJECT_DIR$/public/shopease/src/reducer/chat.js" />
+        <option value="$PROJECT_DIR$/public/shopease/src/sagas/auth.js" />
+        <option value="$PROJECT_DIR$/public/shopease/src/socket.js" />
+        <option value="$PROJECT_DIR$/public/shopease/src/page/chat/Chat.js" />
+        <option value="$PROJECT_DIR$/public/shopease/src/sagas.js" />
+        <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/public/shopease/src/sagas/common.js" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -254,7 +262,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="711" />
@@ -290,8 +298,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -302,12 +310,71 @@
             <path>
               <item name="node-es6-start-kit" type="b2602c69:ProjectViewProjectNode" />
               <item name="node-es6-start-kit" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="node-es6-start-kit" type="b2602c69:ProjectViewProjectNode" />
               <item name="node-es6-start-kit" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="shopease" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="node-es6-start-kit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="node-es6-start-kit" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="shopease" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="node-es6-start-kit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="node-es6-start-kit" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="shopease" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="action" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="node-es6-start-kit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="node-es6-start-kit" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="shopease" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="node-es6-start-kit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="node-es6-start-kit" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="shopease" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="chat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="node-es6-start-kit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="node-es6-start-kit" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="shopease" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="reducer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="node-es6-start-kit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="node-es6-start-kit" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="shopease" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sagas" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="node-es6-start-kit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="node-es6-start-kit" type="462c0819:PsiDirectoryNode" />
+              <item name="router" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="node-es6-start-kit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="node-es6-start-kit" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="node-es6-start-kit" type="b2602c69:ProjectViewProjectNode" />
@@ -334,6 +401,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/public/shopease/build/bundle.js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -390,20 +458,29 @@
       <workItem from="1508774115406" duration="7000" />
       <workItem from="1508987421152" duration="13925000" />
       <workItem from="1509148003029" duration="1292000" />
-      <workItem from="1509247421765" duration="6260000" />
+      <workItem from="1509247421765" duration="6304000" />
+      <workItem from="1509281515308" duration="3824000" />
+      <workItem from="1509373090984" duration="498000" />
+      <workItem from="1509447196215" duration="320000" />
+      <workItem from="1509452657158" duration="3676000" />
+      <workItem from="1509587189118" duration="826000" />
+      <workItem from="1509762411731" duration="5508000" />
+      <workItem from="1509772837130" duration="5167000" />
+      <workItem from="1509880072081" duration="6446000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50767000" />
+    <option name="totallyTimeSpent" value="77076000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="23" width="1280" height="711" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="711" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7386364" sideWeight="0.50277996" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -417,7 +494,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -438,576 +514,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/shopease/build/bundle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="36" lean-forward="false" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/shopease/src/logo.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/shopease/public/manifest.json" />
-    <entry file="file://$PROJECT_DIR$/public/shopease/public/index.html" />
-    <entry file="file://$PROJECT_DIR$/middleware/checkDatabase.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/shopease/src/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/shopease/package.json" />
-    <entry file="file://$PROJECT_DIR$/middleware/checkController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="3" column="30" lean-forward="false" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/middleware/checkModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" column="1" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/shopease/src/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="16" lean-forward="false" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/redux-saga/es/internal/middleware.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="50" column="4" lean-forward="false" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/redux-saga/index.d.ts" />
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/shopease/src/page/Counter.js" />
-    <entry file="file://$PROJECT_DIR$/public/shopease/src/page/User.js" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1509020774000" expanded="true" signature="9295:9512" ph="{&quot;version&quot;: &quot;6.24.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="205739:205748" ph="{&quot;lodash&quot;: &quot;4.17.4&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="205739:205754" ph="{&quot;version&quot;: &quot;3.7.2&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="205776:206008" ph="{&quot;version&quot;: &quot;3.0.6&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="205964:206002" ph="{&quot;deep-diff&quot;: &quot;0.3.8&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="206028:206200" ph="{&quot;version&quot;: &quot;0.16.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="206220:206452" ph="{&quot;version&quot;: &quot;1.3.3&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="206481:206733" ph="{&quot;version&quot;: &quot;0.11.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="206764:207144" ph="{&quot;version&quot;: &quot;0.10.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="207034:207138" ph="{&quot;babel-runtime&quot;: &quot;6.26.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="207165:207464" ph="{&quot;version&quot;: &quot;0.4.4&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="207413:207458" ph="{&quot;is-equal-shallow&quot;: &quot;0.1.3&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="207483:207714" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="207665:207708" ph="{&quot;extend-shallow&quot;: &quot;2.0.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="207736:208030" ph="{&quot;version&quot;: &quot;2.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="207924:208024" ph="{&quot;regenerate&quot;: &quot;1.3.3&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="208059:208330" ph="{&quot;version&quot;: &quot;3.3.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="208261:208324" ph="{&quot;rc&quot;: &quot;1.2.2&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="208352:208577" ph="{&quot;version&quot;: &quot;3.1.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="208540:208571" ph="{&quot;rc&quot;: &quot;1.2.2&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="208595:208761" ph="{&quot;version&quot;: &quot;0.2.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="208782:209008" ph="{&quot;version&quot;: &quot;0.1.5&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="208968:209002" ph="{&quot;jsesc&quot;: &quot;0.5.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="209043:209243" ph="{&quot;version&quot;: &quot;1.1.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="209267:209445" ph="{&quot;version&quot;: &quot;1.1.2&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="209468:209644" ph="{&quot;version&quot;: &quot;1.6.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="209663:209908" ph="{&quot;version&quot;: &quot;2.0.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="209864:209902" ph="{&quot;is-finite&quot;: &quot;1.0.2&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="209930:210809" ph="{&quot;version&quot;: &quot;1.3.3&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="210118:210195" ph="{&quot;http-errors&quot;: &quot;1.5.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="210219:210803" ph="{...}" />
-            <marker date="1509020774000" expanded="true" signature="210244:210573" ph="{&quot;version&quot;: &quot;1.5.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="210446:210563" ph="{&quot;inherits&quot;: &quot;2.0.3&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="210601:210795" ph="{&quot;version&quot;: &quot;1.0.2&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="210835:211079" ph="{&quot;version&quot;: &quot;2.2.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="211100:211272" ph="{&quot;version&quot;: &quot;0.2.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="211299:211566" ph="{&quot;version&quot;: &quot;2.3.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="211497:211560" ph="{&quot;bluebird&quot;: &quot;3.5.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="211587:211818" ph="{&quot;version&quot;: &quot;0.1.3&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="211773:211812" ph="{&quot;align-text&quot;: &quot;0.1.4&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="211837:212005" ph="{&quot;version&quot;: &quot;0.2.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="212026:212260" ph="{&quot;version&quot;: &quot;5.1.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="212273:212491" ph="{&quot;version&quot;: &quot;1.2.4&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="212513:212739" ph="{&quot;version&quot;: &quot;0.3.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="212701:212733" ph="{&quot;ajv&quot;: &quot;5.3.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="212755:212979" ph="{&quot;version&quot;: &quot;5.4.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="213000:213227" ph="{&quot;version&quot;: &quot;2.1.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="213186:213221" ph="{&quot;semver&quot;: &quot;5.4.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="213246:213414" ph="{&quot;version&quot;: &quot;0.0.5&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="213433:214565" ph="{&quot;version&quot;: &quot;4.18.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="213679:214207" ph="{&quot;bluebird&quot;: &quot;3.5.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="214231:214559" ph="{...}" />
-            <marker date="1509020774000" expanded="true" signature="214250:214551" ph="{&quot;version&quot;: &quot;3.1.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="214502:214541" ph="{&quot;ms&quot;: &quot;2.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="214585:214818" ph="{&quot;version&quot;: &quot;0.1.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="214769:214812" ph="{&quot;to-object-path&quot;: &quot;0.3.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="214846:215032" ph="{&quot;version&quot;: &quot;1.0.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="215051:215447" ph="{&quot;version&quot;: &quot;2.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="215295:215441" ph="{&quot;extend-shallow&quot;: &quot;2.0.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="215469:215643" ph="{&quot;version&quot;: &quot;1.0.5&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="215667:215845" ph="{&quot;version&quot;: &quot;1.0.3&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="215861:216023" ph="{&quot;version&quot;: &quot;2.2.6&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="216048:216290" ph="{&quot;version&quot;: &quot;1.2.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="216242:216284" ph="{&quot;shebang-regex&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="216313:216489" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="216506:216670" ph="{&quot;version&quot;: &quot;1.1.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="216691:216863" ph="{&quot;version&quot;: &quot;3.0.2&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="216886:217062" ph="{&quot;version&quot;: &quot;0.1.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="217077:217256" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="217276:218754" ph="{&quot;version&quot;: &quot;0.8.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="217460:217715" ph="{&quot;base&quot;: &quot;0.11.2&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="217739:218748" ph="{...}" />
-            <marker date="1509020774000" expanded="true" signature="217768:218038" ph="{&quot;version&quot;: &quot;0.2.5&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="217978:218028" ph="{&quot;is-descriptor&quot;: &quot;0.1.6&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="218065:218477" ph="{&quot;version&quot;: &quot;0.1.6&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="218333:218467" ph="{&quot;is-accessor-descriptor&quot;: &quot;0.1.6&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="218498:218740" ph="{&quot;version&quot;: &quot;5.1.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="218779:219386" ph="{&quot;version&quot;: &quot;2.1.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="219035:219144" ph="{&quot;define-property&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="219168:219380" ph="{...}" />
-            <marker date="1509020774000" expanded="true" signature="219190:219372" ph="{&quot;version&quot;: &quot;3.0.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="219411:219709" ph="{&quot;version&quot;: &quot;3.0.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="219667:219703" ph="{&quot;kind-of&quot;: &quot;3.2.2&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="219728:220092" ph="{&quot;version&quot;: &quot;2.0.4&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="219910:220086" ph="{&quot;debug&quot;: &quot;2.6.9&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="220119:220303" ph="{&quot;version&quot;: &quot;1.1.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="220329:220958" ph="{&quot;version&quot;: &quot;2.0.4&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="220525:220952" ph="{&quot;backo2&quot;: &quot;1.0.2&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="220984:221551" ph="{&quot;version&quot;: &quot;3.1.2&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="221180:221312" ph="{&quot;component-emitter&quot;: &quot;1.2.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="221336:221545" ph="{...}" />
-            <marker date="1509020774000" expanded="true" signature="221357:221537" ph="{&quot;version&quot;: &quot;2.0.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="221570:221799" ph="{&quot;version&quot;: &quot;1.1.2&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="221752:221793" ph="{&quot;is-plain-obj&quot;: &quot;1.1.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="221824:222066" ph="{&quot;version&quot;: &quot;2.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="222086:222256" ph="{&quot;version&quot;: &quot;0.5.7&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="222284:222718" ph="{&quot;version&quot;: &quot;0.5.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="222546:222712" ph="{&quot;atob&quot;: &quot;2.0.3&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="222746:223074" ph="{&quot;version&quot;: &quot;0.4.18&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="223029:223068" ph="{&quot;source-map&quot;: &quot;0.5.7&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="223098:223276" ph="{&quot;version&quot;: &quot;0.4.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="223291:223507" ph="{&quot;version&quot;: &quot;0.3.3&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="223465:223501" ph="{&quot;through&quot;: &quot;2.3.8&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="223529:223828" ph="{&quot;version&quot;: &quot;3.0.2&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="223779:223822" ph="{&quot;extend-shallow&quot;: &quot;2.0.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="223848:224018" ph="{&quot;version&quot;: &quot;1.0.3&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="224037:224205" ph="{&quot;version&quot;: &quot;2.3.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="224228:225533" ph="{&quot;version&quot;: &quot;0.1.2&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="224418:224494" ph="{&quot;define-property&quot;: &quot;0.2.5&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="224518:225527" ph="{...}" />
-            <marker date="1509020774000" expanded="true" signature="224547:224817" ph="{&quot;version&quot;: &quot;0.2.5&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="224757:224807" ph="{&quot;is-descriptor&quot;: &quot;0.1.6&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="224844:225256" ph="{&quot;version&quot;: &quot;0.1.6&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="225112:225246" ph="{&quot;is-accessor-descriptor&quot;: &quot;0.1.6&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="225277:225519" ph="{&quot;version&quot;: &quot;5.1.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="225551:225779" ph="{&quot;version&quot;: &quot;1.4.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="225806:226083" ph="{&quot;version&quot;: &quot;2.0.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="226004:226077" ph="{&quot;inherits&quot;: &quot;2.0.3&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="226108:226345" ph="{&quot;version&quot;: &quot;0.0.4&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="226302:226339" ph="{&quot;duplexer&quot;: &quot;0.1.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="226366:226795" ph="{&quot;version&quot;: &quot;2.7.2&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="226614:226789" ph="{&quot;builtin-status-codes&quot;: &quot;3.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="226822:227006" ph="{&quot;version&quot;: &quot;1.1.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="227028:227890" ph="{&quot;version&quot;: &quot;2.1.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="227278:227361" ph="{&quot;is-fullwidth-code-point&quot;: &quot;2.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="227385:227884" ph="{...}" />
-            <marker date="1509020774000" expanded="true" signature="227409:227595" ph="{&quot;version&quot;: &quot;3.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="227619:227876" ph="{&quot;version&quot;: &quot;4.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="227819:227866" ph="{&quot;ansi-regex&quot;: &quot;3.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="227914:228214" ph="{&quot;version&quot;: &quot;1.0.3&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="228168:228208" ph="{&quot;safe-buffer&quot;: &quot;5.1.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="228234:228463" ph="{&quot;version&quot;: &quot;3.0.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="228418:228457" ph="{&quot;ansi-regex&quot;: &quot;2.1.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="228482:228650" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="228679:228867" ph="{&quot;version&quot;: &quot;2.0.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="228889:229602" ph="{&quot;version&quot;: &quot;0.19.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="229141:229215" ph="{&quot;loader-utils&quot;: &quot;1.1.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="229239:229596" ph="{...}" />
-            <marker date="1509020774000" expanded="true" signature="229265:229588" ph="{&quot;version&quot;: &quot;1.1.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="229469:229578" ph="{&quot;big.js&quot;: &quot;3.2.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="229626:229804" ph="{&quot;version&quot;: &quot;2.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="229823:236369" ph="{&quot;version&quot;: &quot;1.2.16&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="230069:230497" ph="{&quot;bluebird&quot;: &quot;3.5.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="230521:236363" ph="{...}" />
-            <marker date="1509020774000" expanded="true" signature="230543:230725" ph="{&quot;version&quot;: &quot;4.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="230751:230941" ph="{&quot;version&quot;: &quot;0.3.2&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="230961:231641" ph="{&quot;version&quot;: &quot;2.3.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="231215:231631" ph="{&quot;arr-flatten&quot;: &quot;1.1.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="231660:231836" ph="{&quot;version&quot;: &quot;2.1.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="231865:232727" ph="{&quot;version&quot;: &quot;2.1.4&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="232075:232346" ph="{&quot;debug&quot;: &quot;2.6.9&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="232374:232717" ph="{...}" />
-            <marker date="1509020774000" expanded="true" signature="232407:232705" ph="{&quot;version&quot;: &quot;0.2.5&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="232633:232691" ph="{&quot;is-descriptor&quot;: &quot;0.1.6&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="232748:233323" ph="{&quot;version&quot;: &quot;2.0.2&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="233004:233313" ph="{&quot;array-unique&quot;: &quot;0.3.2&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="233347:233719" ph="{&quot;version&quot;: &quot;4.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="233547:233709" ph="{&quot;extend-shallow&quot;: &quot;2.0.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="233746:234158" ph="{&quot;version&quot;: &quot;0.1.6&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="234014:234148" ph="{&quot;is-accessor-descriptor&quot;: &quot;0.1.6&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="234181:234776" ph="{&quot;version&quot;: &quot;3.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="234379:234423" ph="{&quot;kind-of&quot;: &quot;3.2.2&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="234451:234766" ph="{...}" />
-            <marker date="1509020774000" expanded="true" signature="234476:234754" ph="{&quot;version&quot;: &quot;3.2.2&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="234686:234740" ph="{&quot;is-buffer&quot;: &quot;1.1.6&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="234798:234980" ph="{&quot;version&quot;: &quot;3.0.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="235001:235243" ph="{&quot;version&quot;: &quot;5.1.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="235269:235592" ph="{&quot;version&quot;: &quot;1.1.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="235473:235582" ph="{&quot;big.js&quot;: &quot;3.2.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="235616:236355" ph="{&quot;version&quot;: &quot;3.1.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="235878:236345" ph="{&quot;arr-diff&quot;: &quot;4.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="236396:236756" ph="{&quot;version&quot;: &quot;1.3.3&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="236656:236750" ph="{&quot;deepmerge&quot;: &quot;1.3.2&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="236783:237698" ph="{&quot;version&quot;: &quot;3.4.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="237043:237311" ph="{&quot;bluebird&quot;: &quot;3.5.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="237335:237692" ph="{...}" />
-            <marker date="1509020774000" expanded="true" signature="237361:237684" ph="{&quot;version&quot;: &quot;1.1.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="237565:237674" ph="{&quot;big.js&quot;: &quot;3.2.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="237722:238374" ph="{&quot;version&quot;: &quot;2.2.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="237914:237987" ph="{&quot;file-loader&quot;: &quot;1.1.5&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="238011:238368" ph="{...}" />
-            <marker date="1509020774000" expanded="true" signature="238037:238360" ph="{&quot;version&quot;: &quot;1.1.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="238241:238350" ph="{&quot;big.js&quot;: &quot;3.2.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="238388:238761" ph="{&quot;version&quot;: &quot;0.7.2&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="238560:238755" ph="{&quot;coa&quot;: &quot;1.0.4&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="238788:238972" ph="{&quot;version&quot;: &quot;1.0.4&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="238989:239155" ph="{&quot;version&quot;: &quot;0.1.10&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="239174:239396" ph="{&quot;version&quot;: &quot;1.2.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="239356:239390" ph="{&quot;execa&quot;: &quot;0.7.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="239417:239652" ph="{&quot;version&quot;: &quot;1.0.8&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="239603:239646" ph="{&quot;@types/geojson&quot;: &quot;1.0.5&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="239684:239938" ph="{&quot;version&quot;: &quot;1.1.2&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="239892:239932" ph="{&quot;terraformer&quot;: &quot;1.0.8&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="239955:240179" ph="{&quot;version&quot;: &quot;3.3.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="240133:240173" ph="{&quot;any-promise&quot;: &quot;1.3.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="240200:240428" ph="{&quot;version&quot;: &quot;1.6.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="240386:240422" ph="{&quot;thenify&quot;: &quot;3.3.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="240445:240609" ph="{&quot;version&quot;: &quot;2.3.8&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="240628:240796" ph="{&quot;version&quot;: &quot;4.0.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="240823:241130" ph="{&quot;version&quot;: &quot;2.0.4&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="241083:241124" ph="{&quot;setimmediate&quot;: &quot;1.0.5&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="241148:241314" ph="{&quot;version&quot;: &quot;0.1.4&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="241338:241516" ph="{&quot;version&quot;: &quot;1.0.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="241544:241730" ph="{&quot;version&quot;: &quot;1.0.3&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="241754:241988" ph="{&quot;version&quot;: &quot;0.3.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="241946:241982" ph="{&quot;kind-of&quot;: &quot;3.2.2&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="242006:243334" ph="{&quot;version&quot;: &quot;3.0.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="242186:242295" ph="{&quot;define-property&quot;: &quot;0.2.5&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="242319:243328" ph="{...}" />
-            <marker date="1509020774000" expanded="true" signature="242348:242618" ph="{&quot;version&quot;: &quot;0.2.5&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="242558:242608" ph="{&quot;is-descriptor&quot;: &quot;0.1.6&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="242645:243057" ph="{&quot;version&quot;: &quot;0.1.6&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="242913:243047" ph="{&quot;is-accessor-descriptor&quot;: &quot;0.1.6&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="243078:243320" ph="{&quot;version&quot;: &quot;5.1.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="243358:243935" ph="{&quot;version&quot;: &quot;2.1.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="243550:243622" ph="{&quot;is-number&quot;: &quot;3.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="243646:243929" ph="{...}" />
-            <marker date="1509020774000" expanded="true" signature="243669:243921" ph="{&quot;version&quot;: &quot;3.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="243867:243911" ph="{&quot;kind-of&quot;: &quot;3.2.2&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="243959:244137" ph="{&quot;version&quot;: &quot;1.0.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="244152:244428" ph="{&quot;version&quot;: &quot;3.1.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="244388:244422" ph="{&quot;nopt&quot;: &quot;1.0.10&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="244446:244612" ph="{&quot;version&quot;: &quot;0.6.6&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="244632:244821" ph="{&quot;version&quot;: &quot;1.0.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="244845:245023" ph="{&quot;version&quot;: &quot;0.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="245040:245298" ph="{&quot;version&quot;: &quot;1.6.15&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="245220:245292" ph="{&quot;media-typer&quot;: &quot;0.3.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="245320:245558" ph="{&quot;version&quot;: &quot;0.7.17&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="245577:246128" ph="{&quot;version&quot;: &quot;2.7.5&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="245759:245893" ph="{&quot;async&quot;: &quot;0.2.10&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="245917:246122" ph="{...}" />
-            <marker date="1509020774000" expanded="true" signature="245936:246114" ph="{&quot;version&quot;: &quot;0.2.10&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="246158:246348" ph="{&quot;version&quot;: &quot;1.0.2&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="246364:246526" ph="{&quot;version&quot;: &quot;1.1.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="246545:246713" ph="{&quot;version&quot;: &quot;0.0.3&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="246732:246900" ph="{&quot;version&quot;: &quot;0.1.8&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="246921:247676" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="247107:247239" ph="{&quot;arr-union&quot;: &quot;3.1.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="247263:247670" ph="{...}" />
-            <marker date="1509020774000" expanded="true" signature="247286:247662" ph="{&quot;version&quot;: &quot;0.4.3&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="247484:247652" ph="{&quot;extend-shallow&quot;: &quot;2.0.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="247690:247848" ph="{&quot;version&quot;: &quot;1.0.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="247864:248085" ph="{&quot;version&quot;: &quot;4.1.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="248040:248079" ph="{&quot;macaddress&quot;: &quot;0.2.8&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="248100:248260" ph="{&quot;version&quot;: &quot;2.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="248283:248528" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="248473:248522" ph="{&quot;crypto-random-string&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="248550:248724" ph="{&quot;version&quot;: &quot;0.1.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="248740:248902" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="248923:250518" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="249109:249176" ph="{&quot;has-value&quot;: &quot;0.3.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="249200:250512" ph="{...}" />
-            <marker date="1509020774000" expanded="true" signature="249223:249889" ph="{&quot;version&quot;: &quot;0.3.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="249421:249535" ph="{&quot;get-value&quot;: &quot;2.0.6&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="249563:249879" ph="{...}" />
-            <marker date="1509020774000" expanded="true" signature="249589:249867" ph="{&quot;version&quot;: &quot;2.1.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="249801:249853" ph="{&quot;isarray&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="249913:250099" ph="{&quot;version&quot;: &quot;0.1.4&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="250322:250504" ph="{&quot;version&quot;: &quot;3.0.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="250542:250720" ph="{&quot;version&quot;: &quot;2.0.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="250745:252526" ph="{&quot;version&quot;: &quot;2.3.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="250939:251231" ph="{&quot;boxen&quot;: &quot;1.2.2&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="251255:252520" ph="{...}" />
-            <marker date="1509020774000" expanded="true" signature="251280:251604" ph="{&quot;version&quot;: &quot;3.2.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="251544:251594" ph="{&quot;color-convert&quot;: &quot;1.9.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="251623:252017" ph="{&quot;version&quot;: &quot;2.3.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="251875:252007" ph="{&quot;ansi-styles&quot;: &quot;3.2.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="252039:252221" ph="{&quot;version&quot;: &quot;2.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="252249:252512" ph="{&quot;version&quot;: &quot;4.5.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="252457:252502" ph="{&quot;has-flag&quot;: &quot;2.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="252541:252765" ph="{&quot;version&quot;: &quot;1.19.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="252779:252937" ph="{&quot;version&quot;: &quot;0.1.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="252950:253433" ph="{&quot;version&quot;: &quot;0.11.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="253122:253191" ph="{&quot;punycode&quot;: &quot;1.3.2&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="253215:253427" ph="{...}" />
-            <marker date="1509020774000" expanded="true" signature="253237:253419" ph="{&quot;version&quot;: &quot;1.3.2&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="253456:253693" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="253646:253687" ph="{&quot;prepend-http&quot;: &quot;1.0.4&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="253711:253935" ph="{&quot;version&quot;: &quot;2.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="253891:253929" ph="{&quot;unidecode&quot;: &quot;0.1.8&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="253948:255465" ph="{&quot;version&quot;: &quot;2.0.2&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="254118:254222" ph="{&quot;define-property&quot;: &quot;0.2.5&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="254246:255459" ph="{...}" />
-            <marker date="1509020774000" expanded="true" signature="254275:254545" ph="{&quot;version&quot;: &quot;0.2.5&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="254485:254535" ph="{&quot;is-descriptor&quot;: &quot;0.1.6&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="254572:254984" ph="{&quot;version&quot;: &quot;0.1.6&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="254840:254974" ph="{&quot;is-accessor-descriptor&quot;: &quot;0.1.6&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="255006:255188" ph="{&quot;version&quot;: &quot;3.0.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="255209:255451" ph="{&quot;version&quot;: &quot;5.1.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="255484:255671" ph="{&quot;version&quot;: &quot;1.1.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="255685:256138" ph="{&quot;version&quot;: &quot;0.10.3&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="255859:255896" ph="{&quot;inherits&quot;: &quot;2.0.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="255920:256132" ph="{...}" />
-            <marker date="1509020774000" expanded="true" signature="255942:256124" ph="{&quot;version&quot;: &quot;2.0.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="256162:256340" ph="{&quot;version&quot;: &quot;1.0.2&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="256354:256574" ph="{&quot;version&quot;: &quot;3.1.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="256587:256769" ph="{&quot;version&quot;: &quot;0.14.5&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="256786:257027" ph="{&quot;version&quot;: &quot;2.1.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="256983:257021" ph="{&quot;user-home&quot;: &quot;1.1.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="257046:257276" ph="{&quot;version&quot;: &quot;9.1.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="257297:257531" ph="{&quot;version&quot;: &quot;0.4.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="257545:257703" ph="{&quot;version&quot;: &quot;1.1.2&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="257720:257884" ph="{&quot;version&quot;: &quot;1.0.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="257907:258139" ph="{&quot;version&quot;: &quot;0.0.4&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="258097:258133" ph="{&quot;indexof&quot;: &quot;0.0.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="258156:258381" ph="{&quot;version&quot;: &quot;3.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="258334:258375" ph="{&quot;loose-envify&quot;: &quot;1.3.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="258400:258911" ph="{&quot;version&quot;: &quot;0.2.9&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="258582:258678" ph="{&quot;async&quot;: &quot;0.9.2&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="258702:258905" ph="{...}" />
-            <marker date="1509020774000" expanded="true" signature="258721:258897" ph="{&quot;version&quot;: &quot;0.9.2&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="258928:259905" ph="{&quot;version&quot;: &quot;1.15.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="259108:259576" ph="{&quot;acorn&quot;: &quot;3.3.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="259600:259899" ph="{...}" />
-            <marker date="1509020774000" expanded="true" signature="259628:259891" ph="{&quot;version&quot;: &quot;3.2.3&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="259836:259881" ph="{&quot;has-flag&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="259927:260732" ph="{&quot;version&quot;: &quot;0.6.9&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="260115:260190" ph="{&quot;source-list-map&quot;: &quot;0.1.8&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="260214:260726" ph="{...}" />
-            <marker date="1509020774000" expanded="true" signature="260243:260439" ph="{&quot;version&quot;: &quot;0.1.8&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="260463:260718" ph="{&quot;version&quot;: &quot;0.4.4&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="260663:260708" ph="{&quot;amdefine&quot;: &quot;1.0.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="260754:260928" ph="{&quot;version&quot;: &quot;2.0.3&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="260949:261121" ph="{&quot;version&quot;: &quot;0.9.9&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="261136:261412" ph="{&quot;version&quot;: &quot;1.3.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="261372:261406" ph="{&quot;isexe&quot;: &quot;2.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="261433:262394" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="261619:261660" ph="{&quot;string-width&quot;: &quot;1.0.2&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="261684:262388" ph="{...}" />
-            <marker date="1509020774000" expanded="true" signature="261721:262007" ph="{&quot;version&quot;: &quot;1.0.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="261947:261997" ph="{&quot;number-is-nan&quot;: &quot;1.0.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="262033:262380" ph="{&quot;version&quot;: &quot;1.0.2&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="262237:262370" ph="{&quot;code-point-at&quot;: &quot;1.1.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="262415:262587" ph="{&quot;version&quot;: &quot;0.1.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="262600:262817" ph="{&quot;version&quot;: &quot;0.4.2&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="262770:262811" ph="{&quot;@types/node&quot;: &quot;8.0.47&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="262835:263001" ph="{&quot;version&quot;: &quot;0.0.3&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="263017:263198" ph="{&quot;version&quot;: &quot;1.0.2&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="263225:263596" ph="{&quot;version&quot;: &quot;2.3.0&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="263485:263590" ph="{&quot;graceful-fs&quot;: &quot;4.1.11&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="263608:264094" ph="{&quot;version&quot;: &quot;2.3.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="263776:263843" ph="{&quot;safe-buffer&quot;: &quot;5.0.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="263867:264088" ph="{...}" />
-            <marker date="1509020774000" expanded="true" signature="263892:264080" ph="{&quot;version&quot;: &quot;5.0.1&quot;...}" />
-            <marker date="1509020774000" expanded="true" signature="264115:264287" ph="{&quot;version&quot;: &quot;3.0.0&quot;...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.babelrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/shopease/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="8" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="20" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/shopease/scripts/start.js" />
-    <entry file="file://$PROJECT_DIR$/view/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/shopease/src/page/auth/Login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/shopease/src/logics/rpc.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/Banner.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/Address.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/Good.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/Order.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/shopease/src/action/ActionType.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/addressApi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="33" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/shopease/src/action/Action.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/shopease/src/sagas.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="20" lean-forward="true" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/shopease/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/shopease/src/sagas.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="38" column="17" lean-forward="true" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#36#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/shopease/src/store/store.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/shopease/src/reducer/reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/react-router/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="407">
           <caret line="47" column="14" lean-forward="false" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1023,63 +533,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="206" lean-forward="false" selection-start-line="3" selection-start-column="206" selection-end-line="3" selection-end-column="206" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/history/createBrowserHistory.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/shopease/src/page/auth/Reg.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="25" column="33" lean-forward="false" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
-          <folding>
-            <element signature="e#42#81#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/shopease/src/history/history.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/shopease/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/shopease/src/components/Header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="29" column="17" lean-forward="true" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
-          <folding>
-            <element signature="e#42#81#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/shopease/src/page/auth/Login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="38" column="24" lean-forward="false" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
-          <folding>
-            <element signature="e#42#81#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1087,7 +540,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1095,59 +547,375 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/Classify.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/ChatUser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/userApi.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-58">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="37" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middleware/checkDatabase.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/Good.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/Classify.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="3" column="36" lean-forward="false" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/ChatUser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/shopease/src/action/ActionType.js" />
+    <entry file="file://$PROJECT_DIR$/public/shopease/src/page/Counter.js" />
+    <entry file="file://$PROJECT_DIR$/public/shopease/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/shopease/src/store/store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
           <folding>
-            <element signature="e#0#37#0" expanded="true" />
+            <element signature="e#0#50#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/shopease/src/logics/rpc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/shopease/src/logics/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/shopease/README.md" />
+    <entry file="file://$PROJECT_DIR$/public/shopease/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/shopease/build/bundle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="11443" column="8" lean-forward="false" selection-start-line="11443" selection-start-column="8" selection-end-line="11443" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/shopease/src/components/Loading.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/shopease/src/components/loading.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="7" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/shopease/src/components/modal.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/shopease/src/reducer/modalShow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#44#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middleware/checkController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="3" column="30" lean-forward="false" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middleware/checkModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/Address.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/chatUserApi.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#37#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/shopease/src/components/modal/MessModal.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/shopease/src/page/auth/Reg.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="9" column="45" lean-forward="false" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+          <folding>
+            <element signature="e#42#81#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/history/createBrowserHistory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="195" column="13" lean-forward="false" selection-start-line="195" selection-start-column="6" selection-end-line="195" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/shopease/src/history/history.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/shopease/src/components/Header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#42#81#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/shopease/src/components/Modal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <folding>
+            <element signature="e#42#81#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/shopease/src/page/chat/component/ChatLine.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/shopease/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="36" column="6" lean-forward="true" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/shopease/src/page/auth/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="54" column="71" lean-forward="true" selection-start-line="52" selection-start-column="12" selection-end-line="54" selection-end-column="71" />
+          <folding>
+            <element signature="e#42#81#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/shopease/src/reducer/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/apiUtil.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/shopease/src/reducer/chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/shopease/src/reducer/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/shopease/src/socket.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/shopease/src/action/Action.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="26" column="22" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/shopease/src/page/chat/Chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+          <folding>
+            <element signature="e#41#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/shopease/src/sagas/chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/shopease/src/sagas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/shopease/src/sagas/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="44" column="73" lean-forward="false" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="73" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="24" column="45" lean-forward="false" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/shopease/src/sagas/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="30" column="25" lean-forward="false" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="517">
-            <caret line="257" column="4" lean-forward="false" selection-start-line="257" selection-start-column="4" selection-end-line="257" selection-end-column="4" />
+          <first_editor relative-caret-position="514">
+            <caret line="307" column="16" lean-forward="false" selection-start-line="307" selection-start-column="16" selection-end-line="307" selection-end-column="16" />
             <folding>
-              <marker date="1509280352000" expanded="true" signature="1632:1771" ph="{...}" />
-              <marker date="1509280352000" expanded="true" signature="3500:3698" ph="{...}" />
-              <marker date="1509280352000" expanded="true" signature="3626:3692" ph="{...}" />
+              <marker date="1509898642000" expanded="true" signature="1632:1771" ph="{...}" />
             </folding>
           </first_editor>
           <second_editor />

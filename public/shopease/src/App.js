@@ -13,9 +13,13 @@ import Login from "./page/auth/Login";
 import Reg from "./page/auth/Reg";
 import Header from "./components/Header";
 import history from './history/history'
+import Modal from "./components/Modal";
+import Chat from "./page/chat/Chat";
 
 class App extends Component {
+
   render() {
+
     return (
       <div>
         <Header/>
@@ -24,9 +28,11 @@ class App extends Component {
             <Switch>
               <Route path='/' exact component={Login}/>
               <Route path='/reg' exact component={Reg}/>
+              <Route path='/chat' exact component={Chat}/>
             </Switch>
           </div>
         </Router>
+        <Modal ref={(modal) => this.modal = modal}/>
       </div>
     );
   }

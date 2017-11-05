@@ -7,7 +7,7 @@ import './Login.css';
 import RaisedButton from 'material-ui/RaisedButton';
 import {post} from '../../logics/rpc';
 import {connect} from "react-redux";
-import {LOGINSTART} from "../../action/Action";
+import {LOGINSTART, loginStart} from "../../action/Action";
 import Dialog from 'material-ui/Dialog';
 import FlatButton from 'material-ui/FlatButton';
 
@@ -20,12 +20,17 @@ class Login extends Component {
     }
   }
 
-  async componentWillMount() {
-
-  }
-
   setLogin = async (e) => {
-    this.props.dispatch(LOGINSTART({username: this.state.username, password: this.state.password}));
+    const {userData} = this.props;
+    this.props.dispatch(
+      loginStart(
+        {
+          username: this.state.username,
+          password: this.state.password
+        }
+      )
+    );
+
   };
 
   toReg = () => {
@@ -65,7 +70,7 @@ class Login extends Component {
 
 function selectUserData(state) {
   return {
-    userData: state.login
+    userData: state.login,
   }
 }
 

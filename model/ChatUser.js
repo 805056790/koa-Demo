@@ -1,7 +1,7 @@
 import sequelize from '../config/sequelize';
 import Sequelize from 'Sequelize';
 
-const ChatUser = sequelize.define("ChatUser", {
+const ChatUser = sequelize.define("chatuser", {
   id: {
     type: Sequelize.INTEGER,
     primaryKey: true,
@@ -10,3 +10,4 @@ const ChatUser = sequelize.define("ChatUser", {
   username: Sequelize.STRING,
   password: Sequelize.STRING
 });
+export default ChatUser;
