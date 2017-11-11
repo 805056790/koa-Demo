@@ -15,8 +15,15 @@ import Header from "./components/Header";
 import history from './history/history'
 import Modal from "./components/Modal";
 import Chat from "./page/chat/Chat";
+import io from 'socket.io-client';
 
 class App extends Component {
+  componentDidMount() {
+    var socket = io('/chat');
+    socket.on('hi', function (data) {
+      console.log("命名空间触发了事件");
+    });
+  }
 
   render() {
 

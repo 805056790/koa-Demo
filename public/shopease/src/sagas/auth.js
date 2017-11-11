@@ -21,8 +21,9 @@ export function* loginSaga() {
       });
       console.log(result);
       yield put({type: LOGINSUCCESS, data: result.data});
+
       //触发登录socket
-      socketClient.emit("login", action.payload.username);
+      socketClient.emit("login", {username: action.payload.username});
 
       history.push("/chat");
     }

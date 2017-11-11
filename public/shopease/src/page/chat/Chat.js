@@ -9,6 +9,7 @@ import {connect} from "react-redux";
 import {modalShow, MODALSHOW} from "../../action/Action";
 import MessModal from "../../components/modal/MessModal";
 
+
 class Chat extends Component {
   constructor(props) {
     super(props);
@@ -18,9 +19,8 @@ class Chat extends Component {
   }
 
   componentDidMount() {
-    const {dispatch} = this.props;
-    socketClient.on("user.login", function (data) {
-      dispatch(modalShow({type: MODALSHOW, component: <MessModal title="112334"/>}))
+    socketClient.on("user.login", function ({username}) {
+      console.log("------" + username + "登录了聊天室");
     })
   }
 
