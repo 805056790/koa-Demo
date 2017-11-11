@@ -307,3 +307,112 @@ module.exports = {
 #### 查看了一下关于socket.io的api
 #### 先上传明日再看11。5，晚安
 #### 看了一下关于socket.io的api
+
+> ##### 命名空间
+
+> 默认的socket IO是以／为命名空间
+
+```javascript
+    io.sockets.emit('hi','everyone');
+    io.emit('hi','everyone');
+```
+
+> 每一个命名空间都发送一个connection事件，并且接收一个socket实例为回调函数的参数
+
+> 命名空间的使用方法
+
+```javascript
+    var nsp = io.of('/my-namespace');
+    nsp.on('connection',function(socket){
+      console.log("-----someone connected");
+    })
+```
+
+> 在客户端 每声明一个io实例那么就产生一次connection连接
+
+```javascript
+   var socket = io('/my-namespace');
+```
+> 所以命名空间的作用是减少tcp的连接次数
+
+> 按需连接------》应该可以理解
+
+> ##### 房间(Rooms)
+
+> 通过join来加入一个给定的房间
+
+```javascript
+    io.on('connection',function(socket){
+      socket.join('some room');
+    });
+```
+
+> 通过to或者in来广播房间内的事件
+
+```javascript
+    io.to('some room').emit('some event');
+```
+
+> 通过leave来离开房间
+
+```javascript
+    io.leave('some room');
+```
+
+> 默认的房间
+
+```javascript
+    io.on("connection",function(socket){
+      //这个连接的话，用户默认被加入到一个房间里面
+      // socket.id便是一个随机的,无序的,唯一的标示房间
+      console.log(socket.id);
+    })
+```
+
+> 最后就是函数备忘单，其实api不是很多
+
+```
+    io.on('connect', onConnect);
+    
+    function onConnect(socket){
+    
+      // sending to the client------->发送事件到客户端
+      socket.emit('hello', 'can you hear me?', 1, 2, 'abc');
+   
+      // sending to all clients except sender----->广播事件，但是除了发送者
+      socket.broadcast.emit('broadcast', 'hello friends!');
+    
+      // sending to all clients in 'game' room except sender---->发送某个房间里面所有---》除了发送者
+      socket.to('game').emit('nice game', "let's play a game");
+    
+      // sending to all clients in 'game1' and/or in 'game2' room, except sender-----> 发送好几个房间
+      socket.to('game1').to('game2').emit('nice game', "let's play a game (too)");
+    
+      // sending to all clients in 'game' room, including sender----》in 方法同 to,io是广播包括发送者
+      io.in('game').emit('big-announcement', 'the game will start soon');
+    
+      // sending to all clients in namespace 'myNamespace', including sender------》一个命名空间所以的成员
+      io.of('myNamespace').emit('bigger-announcement', 'the tournament will start soon');
+    
+      // sending to individual socketid (private message)------> 发送一个单独的事件给一个单独成员
+      socket.to(<socketid>).emit('hey', 'I just met you');
+    
+      // sending with acknowledgement--------> 待发觉
+      socket.emit('question', 'do you think so?', function (answer) {});
+    
+      // sending without compression -------> 待发觉
+      socket.compress(false).emit('uncompressed', "that's rough");
+    
+      // sending a message that might be dropped if the client is not ready to receive messages=----->待发觉
+      socket.volatile.emit('maybe', 'do you really need it?');
+    
+      // sending to all clients on this node (when using multiple nodes)-------->待发觉
+      io.local.emit('hi', 'my lovely babies');
+    
+    };
+```
+
+#### 首先的是成员在线问题
+
+
+

@@ -11,6 +11,7 @@ import views from 'koa-views';
 
 const koa = new Koa();
 const server = require('http').Server(koa.callback());
+
 var io = require('socket.io')(server);
 
 
@@ -23,9 +24,10 @@ io.on('connection', function (socket) {
     console.log("a user disconnect");
   });
   socket.on("login", function ({username}) {
+    console.log("-----据说可以打印出socketId", socket.id);
     console.log(username + "登录了");
-    // sending to all clients except sender
-    socket.broadcast.emit('user.login', {username});
+    // 向客户端广播，这边的话就是有人登录了
+    socket.broadcast.emit('users.login', {id: socket.id, username});
   });
   if (io.nsps['/'].adapter.rooms["room-" + roomno] && io.nsps['/'].adapter.rooms["room-" + roomno].length > 1)
     roomno++;

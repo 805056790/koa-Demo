@@ -8,6 +8,10 @@ const ChatUser = sequelize.define("chatuser", {
     autoIncrement: true
   },
   username: Sequelize.STRING,
-  password: Sequelize.STRING
+  password: Sequelize.STRING,
+  isOn: {
+    type: Sequelize.BOOLEAN,
+    defaultValue: false
+  }
 });
 export default ChatUser;

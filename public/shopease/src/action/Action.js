@@ -16,6 +16,9 @@ export const SENDERROR = "SEND/ERROR";
 
 export const NEWMESSAGE = "NEW/MESSAGE";
 
+export const USERJOIN = "USER/JOIN";
+export const USERLEAVE = "USER/LEAVE";
+
 export const loginStart = createAction(LOGINSTART);
 export const loginSuccess = createAction(LOGINSUCCESS);
 export const loginError = createAction(LOGINERROR);
@@ -32,3 +35,6 @@ export const sendSuccess = createAction(SENDSUCCESS);
 export const sendError = createAction(SENDERROR);
 
 export const newMessage = createAction(NEWMESSAGE);
+
+export const userJoin = createAction(USERJOIN);
+export const userLeave = createAction(USERLEAVE);
