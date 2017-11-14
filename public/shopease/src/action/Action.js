@@ -18,6 +18,8 @@ export const NEWMESSAGE = "NEW/MESSAGE";
 
 export const USERJOIN = "USER/JOIN";
 export const USERLEAVE = "USER/LEAVE";
+export const USERINIT = "USER/INIT"
+
 
 export const loginStart = createAction(LOGINSTART);
 export const loginSuccess = createAction(LOGINSUCCESS);
@@ -38,3 +40,4 @@ export const newMessage = createAction(NEWMESSAGE);
 
 export const userJoin = createAction(USERJOIN);
 export const userLeave = createAction(USERLEAVE);
+export const userInit = createAction(USERINIT);

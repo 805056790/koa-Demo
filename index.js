@@ -17,31 +17,33 @@ var io = require('socket.io')(server);
 
 var roomno = 1;
 
+let users = [];
+
 io.on('connection', function (socket) {
-  console.log(io);
-  console.log('a user connect');
-  socket.on("disconnect", function () {
-    console.log("a user disconnect");
-  });
+  //监听登录状态
   socket.on("login", function ({username}) {
     console.log("-----据说可以打印出socketId", socket.id);
     console.log(username + "登录了");
     // 向客户端广播，这边的话就是有人登录了
+    users.push({id: socket.id, username: username});
+
+    io.to(socket.id).emit("users.init", users);
+    //试试看能不能存储状态------->可以存储
+    socket.username = username;
+
     socket.broadcast.emit('users.login', {id: socket.id, username});
   });
-  if (io.nsps['/'].adapter.rooms["room-" + roomno] && io.nsps['/'].adapter.rooms["room-" + roomno].length > 1)
-    roomno++;
-  socket.join("room-" + roomno);
-  console.log("---下面要展示的就是所谓的fangjian");
-  //Send this event to everyone in the room.
-  io.sockets.in("room-" + roomno).emit('connectToRoom', "You are in room no. " + roomno);
-  console.log(io.nsps['/'].adapter)
-});
+  //监听消息的发送
+  socket.on("sendMessage", function (mess) {
+    console.log({username: socket.username, mess: mess, id: socket.id});
+    socket.broadcast.emit('new.mess', {username: socket.username, mess: mess.mess, id: socket.id});
 
-var nsp = io.of("/chat");
-nsp.on('connection', function (socket) {
-  console.log('someone connected');
-  nsp.emit('hi', 'Hello everyone!');
+  });
+
+  socket.on("disconnect", function () {
+    console.log("a user disconnect");
+  });
+
 });
 
 

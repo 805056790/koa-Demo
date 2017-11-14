@@ -24,7 +24,7 @@ const chat = handleActions({
   },
   [NEWMESSAGE]: (state, action) => {
     return {
-      chatList: [...state.chatList, {message: action.message, name: action.name}],
+      chatList: [...state.chatList, {message: action.payload.message, name: action.payload.username}],
       sendPadding: false
     }
   }

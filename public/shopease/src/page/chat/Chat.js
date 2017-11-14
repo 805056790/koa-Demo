@@ -8,6 +8,8 @@ import socketClient from '../../socket';
 import {connect} from "react-redux";
 import {modalShow, MODALSHOW} from "../../action/Action";
 import MessModal from "../../components/modal/MessModal";
+import UserOnList from "./UserOnList";
+import ChatList from "./ChatList";
 
 
 class Chat extends Component {
@@ -18,15 +20,9 @@ class Chat extends Component {
     }
   }
 
-  componentDidMount() {
-    socketClient.on("user.login", function ({username}) {
-      console.log("------" + username + "登录了聊天室");
-    })
-  }
-
   //发送消息
   sendMessage = () => {
-
+    socketClient.emit("sendMessage", {mess: this.state.message});
   };
 
   render() {
@@ -39,6 +35,9 @@ class Chat extends Component {
           onChange={(e) => this.setState({message: e.target.value})}
         /><br/>
         <button onClick={this.sendMessage}>发送</button>
+        <ChatList/>
+        <br/>
+        <UserOnList/>
       </div>
     );
   }
