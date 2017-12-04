@@ -1,4 +1,4 @@
-export function api(status, data, message) {
+export function api(ctx,status, data, message) {
   return {
     status,
     data,

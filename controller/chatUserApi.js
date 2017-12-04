@@ -28,6 +28,7 @@ async function login(ctx) {
 async function reg(ctx) {
   let username = ctx.request.body.username;
   let password = ctx.request.body.password;
+
   console.log(username, password);
   if (username === "" || password === "") {
     ctx.body = api(403, [], "用户名或者密码不能为空");
@@ -44,6 +45,7 @@ async function reg(ctx) {
     }
   }
 }
+
 
 export default {
   "POST /login": login,

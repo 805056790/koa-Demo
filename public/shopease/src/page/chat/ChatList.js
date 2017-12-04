@@ -12,7 +12,7 @@ class ChatList extends Component {
       <div>
         {
           chatList.map((v, i) =>
-            <div>
+            <div key={i}>
               <p>{v.name}:{v.message}</p>
             </div>
           )

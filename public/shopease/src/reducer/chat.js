@@ -1,5 +1,5 @@
 import {handleActions} from 'redux-actions';
-import {NEWMESSAGE, SENDSTART, SENDSUCCESS} from "../action/Action";
+import {NEWMESSAGE, SENDERROR, SENDSTART, SENDSUCCESS} from "../action/Action";
 
 const initialState = {
   chatList: [],
@@ -15,11 +15,11 @@ const chat = handleActions({
   },
   [SENDSUCCESS]: (state, action) => {
     return {
-      chatList: [...state.chatList, {message: action.message, name: action.name}],
+      chatList: [...state.chatList, {message: action.payload.message, name: action.payload.name}],
       sendPadding: false
     }
   },
-  [SENDSUCCESS]: (state, action) => {
+  [SENDERROR]: (state, action) => {
     return state;
   },
   [NEWMESSAGE]: (state, action) => {

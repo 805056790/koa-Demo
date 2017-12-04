@@ -6,7 +6,7 @@ import ChatLine from "./component/ChatLine";
 import TextField from 'material-ui/TextField';
 import socketClient from '../../socket';
 import {connect} from "react-redux";
-import {modalShow, MODALSHOW} from "../../action/Action";
+import {modalShow, MODALSHOW, sendSuccess} from "../../action/Action";
 import MessModal from "../../components/modal/MessModal";
 import UserOnList from "./UserOnList";
 import ChatList from "./ChatList";
@@ -22,7 +22,12 @@ class Chat extends Component {
 
   //发送消息
   sendMessage = () => {
+    console.log("----点击了发送消息的按钮-----");
+    const {dispatch} = this.props;
+    //向云端广播发送的消息
     socketClient.emit("sendMessage", {mess: this.state.message});
+    //向本地存储发送的消息
+    dispatch(sendSuccess({message: this.state.message, name: "编的名字"}));
   };
 
   render() {

@@ -1,7 +1,7 @@
 import fs from 'fs';
 import router from '../router'
 
-export default async function checkController(ctx, next) {
+export default async function checkController() {
   fs.readdir("./controller", 'utf-8', function (err, data) {
     console.log(data);
     for (let url of data) {
@@ -30,5 +30,4 @@ export default async function checkController(ctx, next) {
       }
     }
   });
-  next();
 }

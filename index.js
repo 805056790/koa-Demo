@@ -28,11 +28,13 @@ io.on('connection', function (socket) {
     users.push({id: socket.id, username: username});
 
     io.to(socket.id).emit("users.init", users);
+
     //试试看能不能存储状态------->可以存储
     socket.username = username;
 
     socket.broadcast.emit('users.login', {id: socket.id, username});
   });
+
   //监听消息的发送
   socket.on("sendMessage", function (mess) {
     console.log({username: socket.username, mess: mess, id: socket.id});
@@ -66,4 +68,6 @@ koa.use(views(path.join(__dirname, './view'), {
 }));
 
 koa.use(router.routes());
+
+
 server.listen(5050);

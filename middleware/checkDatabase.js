@@ -1,6 +1,6 @@
 import sequelize from '../config/sequelize';
 
-export default async function checkDatabase(ctx, next) {
+export default async function checkDatabase() {
   try {
     console.log("--------333-")
     await sequelize.authenticate();
@@ -8,5 +8,4 @@ export default async function checkDatabase(ctx, next) {
   } catch (err) {
     console.log("连接失败");
   }
-  next();
 }
